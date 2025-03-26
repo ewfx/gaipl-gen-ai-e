@@ -1,0 +1,54 @@
+spring:
+  application:
+    name: incident-management
+  datasource:
+    url: jdbc:postgresql://localhost:5432/incidents
+    username: admin
+    password: password
+    driver-class-name: org.postgresql.Driver
+    hikari:
+      maximum-pool-size: 10
+      minimum-idle: 2
+      idle-timeout: 30000
+      connection-timeout: 20000
+      max-lifetime: 1800000
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    show-sql: true
+  ai:
+    vectorstore:
+      pgvector:
+        initialize-schema: true
+        index-type: HNSW
+        distance-type: COSINE_DISTANCE
+        dimensions: 768
+        batching-strategy: TOKEN_COUNT # Optional: Controls how documents are batched for embedding
+        max-document-batch-size: 10000 # Optional: Maximum number of documents per batch
+    ollama:
+      init:
+        pull-model-strategy: when_missing
+        chat:
+          include: true
+      embedding:
+        options:
+          model: nomic-embed-text
+      base-url: http://localhost:11434    # Ollama base URL
+      model: nomic-embed-text             # Embedding model
+      temperature: 0.4                     # Temperature for more deterministic results
+      timeout: 10s                         # Timeout for model requests
+      retries: 3                           # Retries in case of transient failures
+      batch-size: 5                        # Batch size for embedding generation
+
+
+server:
+  port: 8080
+
+cors:
+  allowed:
+    origins: http://localhost:5173,http://localhost:3000
+    methods: GET,POST,PUT,DELETE,OPTIONS
+    headers: Authorization,Content-Type,Cache-Control
+  allow:
+    credentials: true
+csv:
+  file: src/main/resources/ServiceNow_RAG_Recurring_Incidents.csv

@@ -1,0 +1,21 @@
+Incident ID,Priority,Category,Assignment Group,Assigned To,Description,State,Opened At,Resolved At,Duration,Impact,Urgency,Resolution Notes
+INC0012345,P1,Network,Network Ops,John Doe,Internet outage in HQ affecting multiple floors.,Resolved,2025-03-21 08:45:00,2025-03-21 09:30:00,45m,High,High,Rebooted router and restored connectivity. Similar issue last week.
+INC0012346,P2,Hardware,Desktop Support,Jane Smith,Repeated VPN disconnections across branches.,In Progress,2025-03-21 09:00:00,,N/A,Medium,High,Applied new VPN configuration and restarted VPN server.
+INC0012347,P3,Application,App Support,Tom Brown,Login failures due to LDAP sync issues.,New,2025-03-21 09:15:00,,N/A,Low,Medium,LDAP configuration updated. Re-synced with Active Directory.
+INC0012348,P1,Database,DB Admins,Alice White,Production DB crash during ETL process.,Resolved,2025-03-21 07:00:00,2025-03-21 07:50:00,50m,High,High,"Restarted DB server, cleared ETL cache. Increased memory allocation."
+INC0012349,P2,Network,Network Ops,John Doe,Recurring VPN connectivity issues since last patch.,Closed,2025-03-21 08:00:00,2025-03-21 08:30:00,30m,Medium,High,Patched VPN server and restarted. Ongoing monitoring required.
+INC0012350,P4,Software,App Support,Mike Davis,Application slowness due to high memory usage.,New,2025-03-21 10:00:00,,N/A,Low,Low,Restarted app server. Increased JVM heap size.
+INC0012351,P1,Security,Security Ops,Lisa Black,Unauthorized login attempts flagged by security.,Resolved,2025-03-21 06:30:00,2025-03-21 07:00:00,30m,High,High,Blocked unauthorized IPs and reset admin credentials.
+INC0012352,P3,Email,Helpdesk,Tom Brown,Emails not syncing with Exchange server.,In Progress,2025-03-21 09:45:00,,N/A,Low,Medium,Reconfigured email client and restarted sync service.
+INC0012353,P2,Storage,Infra Team,Kevin Lee,Low disk space alerts on storage cluster.,Resolved,2025-03-21 05:15:00,2025-03-21 06:00:00,45m,Medium,High,Added more storage capacity and cleared old logs.
+INC0012354,P1,Server,Server Ops,Anna Green,Server downtime due to missing patch update.,Resolved,2025-03-21 08:20:00,2025-03-21 08:55:00,35m,High,High,Applied missing patch. Scheduled server reboot.
+INC0012355,P2,Application,App Support,Tom Brown,VPN issues for remote employees.,New,2025-03-21 10:30:00,,N/A,Medium,Medium,Similar VPN disconnection issue as INC0012346.
+INC0012356,P3,Network,Network Ops,John Doe,Frequent network packet loss in branch office.,In Progress,2025-03-21 11:00:00,,N/A,High,High,Network packet loss reduced after router reboot.
+INC0012357,P4,Database,DB Admins,Alice White,DB timeout during data extraction process.,Resolved,2025-03-21 07:45:00,2025-03-21 08:20:00,35m,Medium,Medium,DB timeout resolved by query optimization.
+INC0012358,P1,Security,Security Ops,Lisa Black,Multiple unauthorized login attempts detected.,Resolved,2025-03-21 09:10:00,2025-03-21 09:45:00,35m,High,High,Brute force attempts blocked. Similar to INC0012356.
+INC0012359,P2,Server,Server Ops,Anna Green,High server CPU usage causing performance issues.,Closed,2025-03-21 12:00:00,2025-03-21 12:45:00,45m,High,High,CPU usage stabilized with resource scaling.
+INC0012360,P2,Network,Network Ops,John Doe,Network slowdowns during peak hours.,In Progress,2025-03-21 11:15:00,,N/A,Medium,Medium,Network slowdowns resolved by load balancing.
+INC0012361,P1,Database,DB Admins,Alice White,DB query timeout during batch processing.,Resolved,2025-03-21 12:30:00,2025-03-21 13:30:00,30m,High,High,Query timeouts fixed by DB reindexing.
+INC0012362,P3,Application,App Support,Tom Brown,Application crash post recent deployment.,Closed,2025-03-21 13:00:00,2025-03-21 13:45:00,45m,Medium,Medium,App crash resolved by rolling back the deployment.
+INC0012363,P4,Security,Security Ops,Lisa Black,Repeated brute force attacks on security endpoints.,New,2025-03-21 14:00:00,,N/A,High,High,Blocked new suspicious IPs from brute force.
+INC0012364,P1,Network,Network Ops,John Doe,Intermittent connectivity issues in main office.,Resolved,2025-03-21 15:00:00,2025-03-21 15:30:00,30m,High,High,Connectivity issue resolved by cable replacement.
