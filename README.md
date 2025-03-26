@@ -24,16 +24,16 @@ A brief overview of your project and its purpose. Mention which problem statemen
 ![Screenshot 1](link-to-image)
 
 ## 💡 Inspiration
-What inspired you to create this project? Describe the problem you're solving.
+An AI enabled Dashboard for managing platform related incidents, viewing past related incidents and getting resolution recommendations from historical data using AI.
 
 ## ⚙️ What It Does
-Explain the key features and functionalities of your project.
+Explained in the document present in the artifacts folder.
 
 ## 🛠️ How We Built It
-Briefly outline the technologies, frameworks, and tools used in development.
+Explained in the document present in the artifacts folder. Also written below.
 
 ## 🚧 Challenges We Faced
-Describe the major technical or non-technical challenges your team encountered.
+Difficulty in obtaining realistic test data. Also, the scope of the challenge was very huge, we tried our best.
 
 ## 🏃 How to Run
 1. Clone the repository  
@@ -47,7 +47,7 @@ Describe the major technical or non-technical challenges your team encountered.
 3. Ensure JAVA 17 or later is installed in your system.
 4. Build the Spring Boot Backend JAR. Navigate to the project directory:
    ```sh
-   cd /path/to/your-spring-boot-backend
+   cd /gaipl-gen-ai-e/code/springboot-backend
    ```
 5. Build the JAR:
    ```sh
@@ -58,14 +58,14 @@ Describe the major technical or non-technical challenges your team encountered.
    ```sh
    java -jar build/libs/your-app-name-0.0.1-SNAPSHOT.jar
    ```
-8. Install the following.
+8. Install the following for front-end setup.
    ```sh
    Node.js (LTS version recommended, e.g., 20.x)
    npm
    ```
 9. Then, navigate into the project directory:
    ```sh
-   cd your-repo
+   cd /gaipl-gen-ai-e/code/Incident_Dashboard_Final
    ```
 10. Run the following command to install all required dependencies:
    ```sh
