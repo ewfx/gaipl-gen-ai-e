@@ -38,23 +38,50 @@ Describe the major technical or non-technical challenges your team encountered.
 ## 🏃 How to Run
 1. Clone the repository  
    ```sh
-   git clone https://github.com/your-repo.git
+   git clone https://github.com/ewfx/gaipl-gen-ai-e.git
    ```
-2. Install dependencies  
+2. Go to vectordb folder and run the following command to deploy pgvector database to store vector embeddings of incidents and to run 'ollama' AI embedding model locally.
    ```sh
-   npm install  # or pip install -r requirements.txt (for Python)
+   docker-compose up -d (On Windows/Mac: First Install Docker Desktop, which includes Docker Compose)
    ```
-3. Run the project  
+3. Ensure JAVA 17 or later is installed in your system.
+4. Build the Spring Boot Backend JAR. Navigate to the project directory:
    ```sh
-   npm start  # or python app.py
+   cd /path/to/your-spring-boot-backend
    ```
+5. Build the JAR:
+   ```sh
+   ./gradlew clean build
+   ```
+6. The JAR will be generated under build/libs/your-app-name-0.0.1-SNAPSHOT.jar
+7. Run the JAR:
+   ```sh
+   java -jar build/libs/your-app-name-0.0.1-SNAPSHOT.jar
+   ```
+8. Install the following.
+   ```sh
+   Node.js (LTS version recommended, e.g., 20.x)
+   npm
+   ```
+9. Then, navigate into the project directory:
+   ```sh
+   cd your-repo
+   ```
+10. Run the following command to install all required dependencies:
+   ```sh
+   npm install
+   ```
+11. To run the project in development mode:
+   ```sh
+   npm run dev
+   ```
+12. This will start the AI enabled app on http://localhost:5173
 
 ## 🏗️ Tech Stack
-- 🔹 Frontend: React / Vue / Angular
-- 🔹 Backend: Node.js / FastAPI / Django
-- 🔹 Database: PostgreSQL / Firebase
-- 🔹 Other: OpenAI API / Twilio / Stripe
+- 🔹 Frontend: React with TypeScript and Material-UI
+- 🔹 Backend: Spring Boot with PostgreSQL and pgvector and Ollama
+- 🔹 Database: PostgreSQL / pgvector
 
 ## 👥 Team
-- **Your Name** - [GitHub](#) | [LinkedIn](#)
-- **Teammate 2** - [GitHub](#) | [LinkedIn](#)
+- **Kamalesh Kumar Barik**
+- **Prarthana Maharana**
